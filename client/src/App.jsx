@@ -73,7 +73,7 @@ function App() {
   React.useEffect(() => {
     const interval = setInterval(() => {
       setHeadlineIndex((prev) => (prev + 1) % headlines.length);
-    }, 4000);
+    }, 6000);
     return () => clearInterval(interval);
   }, []);
 

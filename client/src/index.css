@@ -107,7 +107,7 @@ body {
 }
 
 .transition-premium {
-  transition: all 1.2s var(--ease-premium);
+  transition: all 1.8s var(--ease-premium);
 }
 
 .animate-scan {
@@ -124,7 +124,7 @@ body {
 }
 
 .animate-reveal {
-  animation: reveal-scale 1.2s var(--ease-premium) forwards;
+  animation: reveal-scale 1.8s var(--ease-premium) forwards;
 }
 
 /* ... existing animations ... */
@@ -148,11 +148,11 @@ body {
 }
 
 .animate-headline-reveal {
-  animation: headline-reveal 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  animation: headline-reveal 2.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
 }
 
 .animate-premium-reveal {
-  animation: fade-slide-up 1.2s var(--ease-premium) forwards;
+  animation: fade-slide-up 1.8s var(--ease-premium) forwards;
 }
 
 .stagger-1 { animation-delay: 100ms; }
