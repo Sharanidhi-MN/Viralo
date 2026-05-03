@@ -88,7 +88,8 @@ function App() {
     setData(null);
     
     try {
-      const response = await axios.post('http://localhost:5001/analyze', { url, persona });
+      const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5001';
+      const response = await axios.post(`${apiUrl}/analyze`, { url, persona });
       setData(response.data);
     } catch (err) {
       setError(err.response?.data?.error || 'Analysis failed. Please check the URL and try again.');
